@@ -41,13 +41,17 @@
             </form>
         </div>
     </nav>
-    <iframe id="Frame" frameborder="0" onload="setIframeHeight(this)" src="https://xo2e48drj9.k.topthink.com/@weapps" ;>
+    <div>
+      <iframe id="contentView" frameborder="0" width="100%" height="100%"  src="https://xo2e48drj9.k.topthink.com/@weapps" >
 
     </iframe>
-    <script type="text/javascript">
-     var ifm= document.getElementById(“Frame”);
-ifm.height=document.documentElement.clientHeight;
-    </script>
+   <script>
+       var iframe= document.getElementById("contentView");
+       iframe.height = document.documentElement.clientHeight;
+       iframe.width = document.body.clientWidth;
+   </script>
+    </div>
+  
 
     <footer class="text-center">
         <div class="container">
